@@ -1,0 +1,40 @@
+.bee-loader {
+    /*
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #161616;
+    padding: 0.5rem 0;*/
+
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  min-height: 50px; // ensures there's vertical space to center within
+  width: 100%;
+
+  font-style: italic;
+  color: #8d8d8d;
+  }
+  .bee-icon {
+    animation: buzz 1s ease-in-out infinite;
+    transform-origin: center;
+  }
+  @keyframes buzz {
+    0%, 100% {
+      transform: translateY(0) rotate(0deg);
+    }
+    25% {
+      transform: translateY(-3px) rotate(-10deg);
+    }
+    50% {
+      transform: translateY(3px) rotate(10deg);
+    }
+    75% {
+      transform: translateY(-2px) rotate(-5deg);
+    }
+  }

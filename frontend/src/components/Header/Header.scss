@@ -1,0 +1,45 @@
+@use '@carbon/react';
+
+.header {
+  background-color: #262626;
+  color: white;
+  padding: 5px 18px;
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header-title {
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .user-profile {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .user-icon {
+          background-color: #4d4d4d;
+          border-radius: 50%;
+          width: 30px;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      .ibm-logo {
+        height: 24px;
+      }
+    }
+
+  }
+}

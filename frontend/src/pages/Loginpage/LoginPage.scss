@@ -1,0 +1,271 @@
+/*@use '@carbon/react';
+
+.login-page {
+  height: 100vh;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-grid {
+  height: 100%;
+}
+
+.login-row {
+  height: 100%;
+  display: flex;
+}
+
+.login-form-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+  padding: 2rem;
+}
+
+.login-form-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.login-button {
+  margin-top: 2rem;
+}
+
+.login-image-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 2rem;
+
+  // Fix: ensure image column fills height
+  height: 100%;
+}
+
+.login-image-wrapper {
+  width: 100%;
+  height: 100%; // Ensure wrapper has height
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed red;
+}
+
+.login-image {
+  max-width: 100%;
+  max-height: 90%;
+  object-fit: contain; // Keep proportions clean
+}
+*/
+/*
+@use '@carbon/react';
+
+.login-page {
+  height: 100vh;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: stretch; // stretch height of children
+  justify-content: center;
+}
+
+.login-grid {
+  height: 100%;
+}
+
+.login-row {
+  height: 100%;
+  display: flex;
+  flex: 1;
+}
+
+.login-form-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+  padding: 2rem;
+}
+
+.login-form-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.login-button {
+  margin-top: 2rem;
+}
+
+.login-image-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 2rem;
+  height: 100%;       // 🔑 crucial fix
+  flex-grow: 1;       // ensures it grows with flexbox
+}
+
+.login-image-wrapper {
+  width: 100%;
+  height: 100%;       // 🔑 ensures image gets height
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*
+.login-image {
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; // adjusts to wrapper size
+}*/
+/* Working
+@use '@carbon/react';
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.login-page {
+  height: 100vh;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+
+.login-grid {
+  height: 100%;
+  width: 100%;
+}
+
+.login-row {
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0;
+}
+
+.login-form-column,
+.login-image-column {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //padding: 2rem;
+}
+
+.login-form-column {
+  background-color: #f4f4f4;
+}
+
+.login-image-column {
+  background-color: white;
+}
+
+.login-form-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-image-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //padding: 1rem;
+}
+/*
+.login-image {
+  max-width: 100%;
+  max-height: 90%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}*/
+@use '@carbon/react';
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.login-page {
+  height: 100vh;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+
+.login-grid {
+  height: 100%;
+  width: 100%;
+}
+
+.login-row {
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0;
+}
+
+.login-form-column,
+.login-image-column {
+  height: 100%;
+  display: flex;
+  align-items: center;       // vertical center
+  justify-content: center;   // horizontal center
+  //padding: 2rem;
+  box-sizing: border-box;
+}
+
+.login-form-column {
+  background-color: #f4f4f4;
+}
+
+.login-image-column {
+  background-color: #f4f4f4;
+}
+
+.login-form-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-image-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-image {
+  //max-width: 90%;
+  //max-height: 90%;
+  min-width: 90%;
+  min-height: 90%;
+  object-fit: contain;
+}
+
+

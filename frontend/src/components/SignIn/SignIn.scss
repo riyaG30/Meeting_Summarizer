@@ -1,0 +1,67 @@
+@use '@carbon/react';
+
+.sign-in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  
+  background-color: #f4f4f4;
+  //padding: 2rem;
+}
+
+.sign-in-form {
+  max-width: 600px;
+  width: 500px;
+  text-align: left;
+}
+
+.sign-in-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.sign-in-input {
+  margin-bottom: 1.5rem;
+}
+
+.sign-in-button {
+  margin-top: 1rem;
+  display: inline-block; // ensure it doesn't stretch full width
+  margin-left: 0;
+}
+
+.sign-in-button {
+  margin-top: 1rem;
+  margin-bottom: 1rem; // spacing before the error message
+}
+
+.show-password-btn {
+  background: none;
+  border: none;
+  color: #0f62fe; // Carbon blue
+  cursor: pointer;
+  font-size: 0.875rem;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.sign-in-error {
+  margin-top: 1rem;
+}
+
+.password-wrapper {
+  position: relative;
+
+  .toggle-password-icon {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #0f62fe;
+    padding: 0;
+  }
+}
