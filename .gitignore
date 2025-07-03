@@ -3,3 +3,7 @@
 /proxy/node_modules
 /parser/node_modules
 **/node_modules
+/frontend/node_modules
+/backend/.env
+/proxy/.env
+/parser/.env
